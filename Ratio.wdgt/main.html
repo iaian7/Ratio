@@ -1,0 +1,74 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" type="text/css" href="Parts/Transitions.css">
+    <script type="text/javascript" src="Parts/parts.js" charset="utf-8"></script>
+    <script type="text/javascript" src="file:///System/Library/WidgetResources/AppleClasses/AppleAnimator.js" charset="utf-8"></script>
+    <script type="text/javascript" src="file:///System/Library/WidgetResources/AppleClasses/AppleButton.js" charset="utf-8"></script>
+    <script type="text/javascript" src="file:///System/Library/WidgetResources/AppleClasses/AppleInfoButton.js" charset="utf-8"></script>
+    <script type="text/javascript" src="localizedStrings.js" charset="utf-8"></script>
+    <script type="text/javascript" src="main.js" charset="utf-8"></script>
+    <script type="text/javascript" src="Parts/ButtonHandler.js" charset="utf-8"></script>
+    <script type="text/javascript" src="file:///System/Library/WidgetResources/AppleClasses/AppleScrollbar.js" charset="utf-8"></script>
+    <script type="text/javascript" src="file:///System/Library/WidgetResources/AppleClasses/AppleScrollArea.js" charset="utf-8"></script>
+</head>
+<body onload="load();">
+    <div id="front">
+        <img id="frontImg" src="Parts/Images/front.png" alt="">
+        <div id="info"></div>
+        <div id="stack"><div id="main">
+                <div id="presets"></div>
+                <div id="input">
+                    <input type="text" name="inputX" value="1920" id="inputX" onkeydown="keyboard(event)" onkeyup="updateSource(event)" onfocus="selectIt(event)">
+                    <div id="x1"></div>
+                    <input type="text" name="inputY" value="1080" id="inputY" onkeydown="keyboard(event)" onkeyup="updateSource(event)" onfocus="selectIt(event)">
+                    <div id="swap" onclick="swap(event)"></div>
+                </div>
+                <div id="output">
+                    <input type="text" name="outputX" value="1280" id="outputX" onkeydown="keyboard(event)" onkeyup="updateX(event)" onfocus="selectIt(event)">
+                    <div id="x3"></div>
+                    <input type="text" name="outputY" value="720" id="outputY" onkeydown="keyboard(event)" onkeyup="updateY(event)" onfocus="selectIt(event)">
+                </div>
+                <input type="text" name="scale" value="66.67%" id="scale" onkeydown="keyboard(event)" onchange="updateScale(event)" onkeyup="updateScale(event)" onfocus="selectIt(event)">
+                <div id="autoGenerate"></div>
+                <div id="ratios">
+                    <input type="text" name="ratio" value="16 x 9" id="ratio">
+                    <input type="text" name="ratioX" value="16" id="ratioX">
+                    <div id="x2"></div>
+                    <input type="text" name="ratioY" value="9" id="ratioY">
+                    <div id="aspectLock"><div id="unlocked" onclick="toggleLock(event)"></div><div id="locked" onclick="toggleUnlock(event)"></div></div>
+                    <input type="text" name="aspect" value="1.778" id="aspect">
+                </div>
+                <input type="range" min="0" value="66.66" max="200" id="slider" onchange="updateSlider(event)">
+            </div><div id="list">
+                <div id="scrollBox" ondrop="dragDrop(event)" ondragover="dragOver(event)" ondragenter="dragEnter(event)">
+                    <div id="scrollArea">
+                        <div id="content" class="content" style="position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; overflow-x: hidden; overflow-y: hidden; ">
+                            <ul id="ratioList">
+                                <li id="listRowTemplate" class="listRowTemplate_template first">
+                                    <div id="label" class="label_template"></div>
+                                    <div id="labelScale" class="labelScale_template"></div>
+                                </li>
+                            </ul>
+                        </div></div>
+                </div>
+                <div id="autodone"></div>
+            </div><div id="update">
+                <div id="new"></div>
+                <div id="newVersion"></div>
+                <div id="skip"></div>
+                <div id="download"></div>
+            </div></div>
+    </div>
+    <div id="back">
+        <img id="backImg" src="Parts/Images/back.png" alt="">
+        <div id="limits"></div>
+        <div id="explanation"></div>
+        <div id="doneSave"></div>
+        <div id="text"></div>
+        <div id="iaian7com" onclick="iaian7(event)"></div>
+    </div>
+</body>
+</html>
