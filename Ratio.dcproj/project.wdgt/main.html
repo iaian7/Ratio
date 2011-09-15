@@ -17,12 +17,12 @@
     <script type="text/javascript" src="Parts/Transitions.js" charset="utf-8"></script>
     <script type="text/javascript" src="Parts/StackLayout.js" charset="utf-8"></script>
     <script type="text/javascript" src="Parts/Button.js" charset="utf-8"></script>
+    <script type="text/javascript" src="Parts/Shape.js" charset="utf-8"></script>
+    <script type="text/javascript" src="Parts/List.js" charset="utf-8"></script>
+    <script type="text/javascript" src="Parts/ButtonHandler.js" charset="utf-8"></script>
     <script type="text/javascript" src="file:///System/Library/WidgetResources/AppleClasses/AppleScrollbar.js" charset="utf-8"></script>
     <script type="text/javascript" src="file:///System/Library/WidgetResources/AppleClasses/AppleScrollArea.js" charset="utf-8"></script>
     <script type="text/javascript" src="Parts/ScrollArea.js" charset="utf-8"></script>
-    <script type="text/javascript" src="Parts/List.js" charset="utf-8"></script>
-    <script type="text/javascript" src="Parts/ButtonHandler.js" charset="utf-8"></script>
-    <script type="text/javascript" src="Parts/Shape.js" charset="utf-8"></script>
 </head>
 <body onload="load();" apple-part="com.apple.Dashcode.part.StackLayout">
     <div id="front">
@@ -53,14 +53,16 @@
                 </div>
                 <input apple-part="com.apple.Dashcode.part.slider" type="range" min="0" value="66.66" max="200" id="slider" onchange="updateSlider(event)">
             </div><div id="list" apple-part-locked="true" apple-default-image-visibility="hidden">
-                <div apple-part="com.apple.Dashcode.part.scrollarea" id="scrollArea" apple-group="scrollArea">
-                    <div id="content" class="content" apple-group="scrollArea" style="position: absolute; left: 0px; top: 0px; right: 22px; bottom: 0px; overflow-x: hidden; overflow-y: hidden; ">
-                        <ul apple-part="com.apple.Dashcode.part.widgetList" id="autoList">
-                            <li id="listRowTemplate" apple-template="true" class="listRowTemplate_template">
-                                <div id="label" apple-part="com.apple.Dashcode.part.text" class="apple-text apple-no-children label_template" apple-text-overflow="ellipsis"></div>
-                            </li>
-                        </ul>
-                    </div></div>
+                <div apple-part="com.apple.Dashcode.part.box" id="scrollBox" ondrop="dragDrop(event)" ondragover="dragOver(event)" ondragenter="dragEnter(event)" apple-group="input1" apple-text-overflow="">
+                    <div apple-part="com.apple.Dashcode.part.scrollarea" id="scrollArea" apple-group="scrollArea">
+                        <div id="content" class="content" apple-group="scrollArea" style="position: absolute; left: 0px; top: 0px; right: 18px; bottom: 0px; overflow-x: hidden; overflow-y: hidden; ">
+                            <ul apple-part="com.apple.Dashcode.part.widgetList" id="ratioList">
+                                <li id="listRowTemplate" apple-template="true" class="listRowTemplate_template">
+                                    <div id="label" apple-part="com.apple.Dashcode.part.text" class="apple-text apple-no-children label_template" apple-text-overflow="ellipsis"></div>
+                                </li>
+                            </ul>
+                        </div></div>
+                </div>
                 <div apple-part="com.apple.Dashcode.part.roundedtextbutton" class="apple-no-children" apple-style="image-theme: 0; image-shape: 3; image-button-type: 0; image-opacity: 1.00; image-top-color: 0,0,0,0.5; image-bottom-color: 0.615400016,0.615400016,0.615400016,1; image-radius: 5,5,5,5; image-border: 1; image-border-color: 0,0,0,0.5; image-border-width: 1; shine-on: 1; shine-strength: 0.20; shine-alpha-level: 0.20; shine-height: 0.50; glass-arc-height: 0.00; embossed-on: 0; embossed-depth: 1; embossed-shadow: 0.5; embossed-highlight: 0.5; shadow-include-shadow: 0;" id="autodone"></div>
             </div><div id="update" apple-part-locked="true">
                 <div apple-part="com.apple.Dashcode.part.text" class="apple-text apple-no-children" apple-default-image-visibility="hidden" apple-text-overflow="ellipsis" id="new"></div>

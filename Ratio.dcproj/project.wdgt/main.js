@@ -207,6 +207,18 @@ function updateLimit(event) {
 	updatePrefs();
 }
 
+function updateAuto(event) {
+	if (event == "no results found") { return showMain(); };
+
+	event = event.split(" x ");
+	prefWidth = inputX.value = event[0];
+	prefHeight = inputY.value = event[1];
+
+	updatePrefs();
+	showMain();
+	return update(true,true,false,false,true);
+}
+
 function updateSource(event) {
 	var inputX = document.getElementById("inputX");
 	var inputY = document.getElementById("inputY");
@@ -288,7 +300,7 @@ function update(vx, vy, vs, vp, vr, active) {	// vx = width, vy = height, vs = s
 					inputX.value = prefWidth.toFixed(2);
 				}
 //			} else {
-//				alert("no matches found!?!?");
+//				alert("no matches found");
 			}
 		}
 
@@ -344,7 +356,6 @@ function update(vx, vy, vs, vp, vr, active) {	// vx = width, vy = height, vs = s
 			height = (prefHeight/prefWidth)*width;
 			if ((width % 1) == 0 && (height % 1) == 0) {
 				prefRatio = width+" x "+height;
-				listData._rowData[row] = width+" x "+height;
 				row = 1;
 			}
 			width = width+1;
@@ -455,18 +466,22 @@ function selectIt(event) {
 // Auto Generate
 
 var listData = {
-	_rowData: [" "," "," "],
+	_rowData: [" "],
 
 	numberOfRows: function() {
 		return this._rowData.length;
 	},
 
 	prepareRow: function(rowElement, rowIndex, templateElements) {
-		// templateElements contains references to all elements that have an id in the template row.
-		// Ex: set the value of an element with id="label".
 		if (templateElements.label) {
 			templateElements.label.innerText = this._rowData[rowIndex];
 		}
+
+		var _this = this;
+
+		rowElement.onclick = function(event) {
+			updateAuto(_this._rowData[rowIndex])
+		};
 	}
 };
 
@@ -474,7 +489,7 @@ function auto(event) {
 	var width = parseInt(prefWidth);
 	var height = parseInt(prefHeight);
 	var row = 0;
-	listData._rowData = [" "," "," "];
+	listData._rowData = [" "];
 
 	while (width >= (prefLimit*2)) {
 		width = width-prefLimit;
@@ -486,9 +501,11 @@ function auto(event) {
 		}
 	}
 
-	autoList.object.reloadData();
-	document.getElementById("scrollArea").object.refresh();
+	if (listData._rowData[0] == " ") { listData._rowData[0] = "no results found"; };
+
+	ratioList.object.reloadData();
 	showList(event);
+	document.getElementById("scrollArea").object.refresh();
 }
 
 function showMain(event) {
