@@ -64,7 +64,7 @@ body {
     background-color: rgba(0, 0, 0, 0);
     background-image: url(Images/formBackground%203.png);
     background-repeat: repeat-x;
-    border-color: rgba(0, 0, 0, 0.34375);
+    border-color: rgba(0, 0, 0, 0.496094);
     background-position: 50% 50%;
 }
 
@@ -207,7 +207,7 @@ body {
     background-color: rgba(0, 0, 0, 0);
     background-image: url(Images/formBackground%201.png);
     background-repeat: repeat-x;
-    border-color: rgba(0, 0, 0, 0.34375);
+    border-color: rgba(0, 0, 0, 0.496094);
     background-position: 50% 50%;
 }
 
@@ -239,7 +239,7 @@ body {
     margin-left: auto;
     margin-bottom: auto;
     top: -2px;
-    border-color: rgba(0, 0, 0, 0.332031);
+    border-color: rgba(0, 0, 0, 0.308594);
 }
 
 #aspect {
@@ -313,7 +313,7 @@ body {
     background-repeat: repeat-x;
     background-image: url(Images/formBackground%202.png);
     border-style: solid;
-    border-color: rgba(0, 0, 0, 0.34375);
+    border-color: rgba(0, 0, 0, 0.496094);
     background-position: 50% 50%;
 }
 
@@ -327,7 +327,7 @@ body {
     margin-right: 0px;
     margin-bottom: 0px;
     width: auto;
-    border-color: rgba(0, 0, 0, 0.324219);
+    border-color: rgba(0, 0, 0, 0.300781);
 }
 
 #explanation {
@@ -613,8 +613,6 @@ body {
     -webkit-border-bottom-right-radius: 4px 4px;
     border-width: 1px;
     opacity: 1;
-    background-color: rgba(0, 0, 0, 0.09375);
-    border-color: rgba(0, 0, 0, 0.195312);
     border-style: solid;
     margin-top: 0px;
     margin-bottom: 4px;
@@ -622,11 +620,12 @@ body {
     margin-left: 0px;
     margin-right: 0px;
     height: 22px;
+    border-color: rgba(0, 0, 0, 0.179688);
+    background-color: rgba(0, 0, 0, 0.078125);
 }
 
 .label_template {
     position: absolute;
-    width: auto;
     font-family: 'Helvetica Neue';
     font-weight: bold;
     text-overflow: ellipsis;
@@ -639,9 +638,10 @@ body {
     font-size: 14px;
     text-shadow: rgb(0, 0, 0) 0px -1px 1px;
     text-align: center;
-    left: 22px;
     line-height: 16px;
-    right: 22px;
+    left: 62px;
+    margin-right: auto;
+    width: 120px;
 }
 
 #ratioList {
@@ -671,13 +671,13 @@ body {
     background-color: rgba(0, 0, 0, 0);
     top: 0px;
     background-repeat: repeat-x;
-    border-color: rgba(0, 0, 0, 0.410156);
     margin-bottom: auto;
     right: 0px;
     width: auto;
     height: 128px;
     background-image: url(Images/Form-Background-xLarge.png);
     overflow: hidden;
+    border-color: rgba(0, 0, 0, 0.496094);
     background-position: 50% 50%;
 }
 
@@ -693,4 +693,24 @@ body {
     width: 246px;
     height: 128px;
     top: 0px;
+}
+
+.labelScale_template {
+    position: absolute;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    color: rgb(255, 255, 255);
+    text-shadow: rgb(0, 0, 0) 0px -1px 1px;
+    text-align: center;
+    top: 2px;
+    left: 12px;
+    bottom: 2px;
+    height: auto;
+    margin-right: auto;
+    width: 50px;
+    font-family: 'Helvetica Neue';
+    font-size: 12px;
+    line-height: 18px;
+    opacity: 0.7;
 }

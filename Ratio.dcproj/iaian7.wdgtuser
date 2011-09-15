@@ -16,20 +16,20 @@
 		<real>0.0</real>
 		<key>sizes</key>
 		<array>
-			<string>{{0, 0}, {1238, 416}}</string>
-			<string>{{0, 426}, {1238, 612}}</string>
+			<string>{{0, 0}, {1348, 465}}</string>
+			<string>{{0, 475}, {1348, 593}}</string>
 		</array>
 	</dict>
 	<key>ContentViewType</key>
-	<integer>2</integer>
+	<integer>0</integer>
 	<key>Dashboard Widget Prefs</key>
 	<dict>
 		<key>id</key>
-		<string>41afebac03ce65e0</string>
+		<string>12c29f962a5bb041</string>
 		<key>in-layer</key>
 		<true/>
 		<key>path</key>
-		<string>/private/var/folders/4d/4diU+RqIG7SB1DGVwM5hoU+++TI/-Tmp-/Dashcode/.Ratio.dcproj5CeCeF/Ratio.dcproj/project.wdgt/</string>
+		<string>/private/var/folders/vC/vCkFPVDQG38v-H9sp03iaE+++TI/-Tmp-/Dashcode/.Ratio.dcprojvz5Vw2/Ratio.dcproj/project.wdgt/</string>
 		<key>percent-offset-x</key>
 		<integer>0</integer>
 		<key>percent-offset-y</key>
@@ -37,16 +37,21 @@
 		<key>percent-type</key>
 		<integer>1</integer>
 		<key>percent-x</key>
-		<real>0.31354168057441711</real>
+		<real>0.3151041567325592</real>
 		<key>percent-y</key>
-		<real>0.18333333730697632</real>
+		<real>0.18999999761581421</real>
 		<key>pos-x</key>
-		<integer>602</integer>
+		<integer>1885</integer>
 		<key>pos-y</key>
-		<integer>220</integer>
+		<integer>-73</integer>
+		<key>rosetta</key>
+		<false/>
 	</dict>
 	<key>DeploymentOptions</key>
-	<dict/>
+	<dict>
+		<key>SavePath</key>
+		<string>/Users/iaian7/Dropbox/Documents/Widgets/VF Ratio</string>
+	</dict>
 	<key>Design time language</key>
 	<string>en.lproj</string>
 	<key>MainSplitViewGeometry</key>
@@ -59,12 +64,12 @@
 		<real>0.0</real>
 		<key>sizes</key>
 		<array>
-			<string>{{0, 0}, {244, 1059}}</string>
-			<string>{{245, 0}, {1239, 1059}}</string>
+			<string>{{0, 0}, {274, 1089}}</string>
+			<string>{{275, 0}, {1349, 1089}}</string>
 		</array>
 	</dict>
 	<key>MainWindowFrame</key>
-	<string>0 98 1483 1080 0 0 1920 1178 </string>
+	<string>1281 -9 1623 1110 1280 -99 1920 1200 </string>
 	<key>NavigatorSplitViewGeometry</key>
 	<dict>
 		<key>ContentSplitViewConfig</key>
@@ -79,8 +84,8 @@
 		<real>0.0</real>
 		<key>sizes</key>
 		<array>
-			<string>{{0, 0}, {246, 352}}</string>
-			<string>{{0, 362}, {246, 313}}</string>
+			<string>{{0, 0}, {245, 560}}</string>
+			<string>{{0, 570}, {245, 498}}</string>
 		</array>
 	</dict>
 	<key>Objects view expanded items</key>
@@ -183,13 +188,44 @@
 			<integer>0</integer>
 			<integer>2</integer>
 		</array>
-	</array>
-	<key>Objects view last selections</key>
-	<array>
 		<array>
+			<integer>0</integer>
+			<integer>0</integer>
+			<integer>2</integer>
+			<integer>1</integer>
+			<integer>0</integer>
+			<integer>0</integer>
+			<integer>0</integer>
+			<integer>0</integer>
+		</array>
+		<array>
+			<integer>0</integer>
+			<integer>0</integer>
+			<integer>2</integer>
+			<integer>1</integer>
+			<integer>0</integer>
+			<integer>0</integer>
+			<integer>0</integer>
+			<integer>0</integer>
+			<integer>0</integer>
+		</array>
+		<array>
+			<integer>0</integer>
+			<integer>0</integer>
+			<integer>2</integer>
+			<integer>0</integer>
+			<integer>5</integer>
+			<integer>4</integer>
+		</array>
+		<array>
+			<integer>0</integer>
+			<integer>0</integer>
+			<integer>2</integer>
 			<integer>2</integer>
 		</array>
 	</array>
+	<key>Objects view last selections</key>
+	<array/>
 	<key>Opened Steps</key>
 	<array>
 		<integer>0</integer>
@@ -197,6 +233,7 @@
 	<key>Visible StackLayout Views</key>
 	<array>
 		<string>front</string>
+		<string>unlocked</string>
 		<string>main</string>
 	</array>
 </dict>

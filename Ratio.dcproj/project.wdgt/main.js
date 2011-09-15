@@ -208,55 +208,58 @@ function updateLimit(event) {
 }
 
 function updateAuto(event) {
-	if (event == "no results found") { return showMain(); };
-
-	event = event.split(" x ");
-	prefWidth = inputX.value = event[0];
-	prefHeight = inputY.value = event[1];
-
-	updatePrefs();
-	showMain();
-	return update(true,true,false,false,true);
+	if (isNaN(event)) {
+		return showMain();
+	} else {
+		prefScale = event;
+		updatePrefs();
+		showMain();
+		return update(true,true,true,true,false);
+	}
 }
 
 function updateSource(event) {
-	var inputX = document.getElementById("inputX");
-	var inputY = document.getElementById("inputY");
-	var active = false;
-	if (prefLock) {
-//		alert("aspect is locked");
-		if (event.target.id == "inputX") {
-			prefWidth = parseFloat(inputX.value);
-			prefHeight = (parseFloat(inputX.value))/prefAspect;
-			active = "inputX";
-		} else {
-			prefHeight = parseFloat(inputY.value);
-			prefWidth = (parseFloat(inputY.value))*prefAspect;
-			active = "inputY";
-		}
-	} else {
-//		alert("aspect is not locked");
-		prefWidth = parseFloat(inputX.value);
-		prefHeight = parseFloat(inputY.value);
+	var inputX = document.getElementById("inputX").value;
+	var inputY = document.getElementById("inputY").value;
+	var active = "both";
+
+	if (event.target.id == "inputX" && inputX>0) {
+		prefWidth = parseFloat(inputX);
+		if (prefLock) prefHeight = (parseFloat(inputX))/prefAspect;
+		active = "inputX";
+	} else if (event.target.id == "inputY" && inputY>0) {
+		prefHeight = parseFloat(inputY);
+		if (prefLock) prefWidth = (parseFloat(inputY))*prefAspect;
+		active = "inputY";
 	}
 
 	return update(true,true,false,false,true,active);
 }
 
 function updateX(event) {
-	var input = prefWidth;
+//	alert("updateX");
 	var output = document.getElementById("outputX");
 	output = parseFloat(output.value);
-	prefScale = (output/input)*100;
+
+	if (output>0) {
+		prefScale = (output/prefWidth)*100;
+	} else {
+		return update(true,true,false,false,true);
+	}
 
 	return update(false,true,true,true,false);
 }
 
 function updateY(event) {
-	var input = prefHeight;
+//	alert("updateY");
 	var output = document.getElementById("outputY");
 	output = parseFloat(output.value);
-	prefScale = parseFloat((output/input)*100);
+
+	if (output>0) {
+		prefScale = (output/prefHeight)*100;
+	} else {
+		return update(true,true,false,false,true);
+	}
 
 	return update(true,false,true,true,false);
 }
@@ -269,21 +272,24 @@ function updateSlider(event) {
 }
 
 function updateScale(event) {
-	var scale = document.getElementById("scale");
-	prefScale = parseFloat(scale.value);
+	var scale = document.getElementById("scale").value;
+	var tf = true;
+
 	if (event.type == "keyup") {
-		var tf = false;
-		if (event.keyCode == "13" || event.keyCode == "38" || event.keyCode == "40") {
-			tf = true
-		}
-		return update(true,true,true,tf,false);
-	} else {
-		return update(true,true,true,true,false);
+		tf = (event.keyCode == "13" || event.keyCode == "38" || event.keyCode == "40") ? true : false;
 	}
+
+	if (parseInt(scale)>0) {
+		prefScale = parseFloat(scale);
+	} else {
+		tf = true;
+	}
+
+	return update(true,true,true,tf,false);
 }
 
 function update(vx, vy, vs, vp, vr, active) {	// vx = width, vy = height, vs = slider, vp = percentage, vr = ratio & aspect, active = currently active area
-	if (vx == true && vy == true) {
+	if (vx && vy) {
 		if (prefLock && active) {
 			if (active == "inputX") {
 //				alert("X active");
@@ -299,40 +305,44 @@ function update(vx, vy, vs, vp, vr, active) {	// vx = width, vy = height, vs = s
 				} else {
 					inputX.value = prefWidth.toFixed(2);
 				}
-//			} else {
-//				alert("no matches found");
 			}
+		}
+
+		if (active == "both") {
+//			alert("prevent null results");
+			inputX.value = prefWidth.toFixed(0);
+			inputY.value = prefHeight.toFixed(0);
 		}
 
 		vx = prefWidth*(prefScale*.01);
 		vy = prefHeight*(prefScale*.01);
 
 		if (prefLimit == "none") {
+//			alert("case 1a");
 			outputX.value = vx.toFixed(2);
 			outputY.value = vy.toFixed(2);
-//			alert("case 1a");
 		} else if ((vx % prefLimit) == 0 && (vy % prefLimit) == 0 || vs == vp) {
+//			alert("case 1b");
 			outputX.value = vx.toFixed(0);
 			outputY.value = vy.toFixed(0);
-//			alert("case 1b");
 		}
-	} else if (vx == false) {
+	} else if (vy) {
 		vy = prefHeight*(prefScale*.01);
 		if ((vy % 1) == 0) {
-			outputY.value = vy.toFixed(0);
 //			alert("case 2a");
+			outputY.value = vy.toFixed(0);
 		} else {
-			outputY.value = vy.toFixed(2);
 //			alert("case 2b");
+			outputY.value = vy.toFixed(2);
 		}
-	} else if (vy == false) {
+	} else if (vx) {
 		vx = prefWidth*(prefScale*.01);
 		if ((vx % 1) == 0) {
-			outputX.value = vx.toFixed(0);
 //			alert("case 3a");
+			outputX.value = vx.toFixed(0);
 		} else {
-			outputX.value = vx.toFixed(2);
 //			alert("case 3b");
+			outputX.value = vx.toFixed(2);
 		}
 	}
 
@@ -348,7 +358,7 @@ function update(vx, vy, vs, vp, vr, active) {	// vx = width, vy = height, vs = s
 		}
 	}
 
-	if (vr) {
+	if (vr && prefWidth>0 && prefHeight>0 && !prefLock) {
 		var width = 1;
 		var height = 1;
 		var row = 0;
@@ -366,8 +376,6 @@ function update(vx, vy, vs, vp, vr, active) {	// vx = width, vy = height, vs = s
 	}
 }
 
-
-
 // Swap Width and Height
 
 function swap(event) {
@@ -384,8 +392,6 @@ function swap(event) {
 
 	return update(true,true,false,false,true);
 }
-
-
 
 // Aspect Ratio Toggles
 
@@ -406,8 +412,6 @@ function showLock(event) {
 function showUnlock(event) {
 	document.getElementById("aspectLock").object.setCurrentView("unlocked", true, true);
 }
-
-
 
 // Key listener
 
@@ -466,21 +470,27 @@ function selectIt(event) {
 // Auto Generate
 
 var listData = {
-	_rowData: [" "],
+	_rowData: [["","",""]],
 
 	numberOfRows: function() {
 		return this._rowData.length;
 	},
 
 	prepareRow: function(rowElement, rowIndex, templateElements) {
+		if (templateElements.labelScale) {
+			var labScale = parseFloat(this._rowData[rowIndex][0]).toFixed(2);
+//			labScale = ((labScale % 1) == 0) ? parseInt(labScale) : labScale;
+			templateElements.labelScale.innerText = (isNaN(labScale)) ? "" : labScale+"%";
+		}
+
 		if (templateElements.label) {
-			templateElements.label.innerText = this._rowData[rowIndex];
+			templateElements.label.innerText = this._rowData[rowIndex][1];
 		}
 
 		var _this = this;
 
 		rowElement.onclick = function(event) {
-			updateAuto(_this._rowData[rowIndex])
+			updateAuto(_this._rowData[rowIndex][0])
 		};
 	}
 };
@@ -489,19 +499,19 @@ function auto(event) {
 	var width = parseInt(prefWidth);
 	var height = parseInt(prefHeight);
 	var row = 0;
-	listData._rowData = [" "];
+	listData._rowData = [["","",""]];
 
 	while (width >= (prefLimit*2)) {
 		width = width-prefLimit;
 		height = (prefHeight/prefWidth)*width;
 
 		if ((width % prefLimit) == 0 && (height % prefLimit) == 0) {
-			listData._rowData[row] = width+" x "+height;
+			listData._rowData[row] = [(width/prefWidth)*100, width+" x "+height];
 			row = row+1;
 		}
 	}
 
-	if (listData._rowData[0] == " ") { listData._rowData[0] = "no results found"; };
+	if (listData._rowData[0][0] < 1) listData._rowData[0][1] = listData._rowData[0][0] = "no results found";
 
 	ratioList.object.reloadData();
 	showList(event);

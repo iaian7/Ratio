@@ -21,7 +21,7 @@
 	<key>Dashboard Widget Prefs</key>
 	<dict>
 		<key>id</key>
-		<string>38313070d159b041</string>
+		<string>d060e78ae959b041</string>
 		<key>in-layer</key>
 		<true/>
 		<key>path</key>
@@ -33,13 +33,13 @@
 		<key>percent-type</key>
 		<integer>2</integer>
 		<key>percent-x</key>
-		<real>0.38124999403953552</real>
+		<real>0.35989582538604736</real>
 		<key>percent-y</key>
-		<real>0.17416666448116302</real>
+		<real>0.15083333849906921</real>
 		<key>pos-x</key>
-		<integer>888</integer>
+		<integer>929</integer>
 		<key>pos-y</key>
-		<integer>209</integer>
+		<integer>181</integer>
 		<key>rosetta</key>
 		<false/>
 	</dict>
@@ -69,7 +69,7 @@
 		</array>
 	</dict>
 	<key>MainWindowFrame</key>
-	<string>260 101 1374 1077 0 0 1920 1178 </string>
+	<string>259 101 1374 1077 0 0 1920 1178 </string>
 	<key>NavigatorSplitViewGeometry</key>
 	<dict>
 		<key>ContentSplitViewConfig</key>
@@ -255,10 +255,7 @@
 	<key>Objects view last selections</key>
 	<array>
 		<array>
-			<integer>0</integer>
-			<integer>0</integer>
-			<integer>2</integer>
-			<integer>2</integer>
+			<integer>5</integer>
 		</array>
 	</array>
 	<key>Opened Steps</key>
@@ -269,7 +266,7 @@
 	<array>
 		<string>front</string>
 		<string>unlocked</string>
-		<string>update</string>
+		<string>main</string>
 	</array>
 	<key>Widget</key>
 	<dict>
