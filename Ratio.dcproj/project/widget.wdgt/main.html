@@ -4,31 +4,21 @@
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" type="text/css" href="Parts/Transitions.css">
+    <script type="text/javascript" src="Parts/parts.js" charset="utf-8"></script>
     <script type="text/javascript" src="file:///System/Library/WidgetResources/AppleClasses/AppleAnimator.js" charset="utf-8"></script>
     <script type="text/javascript" src="file:///System/Library/WidgetResources/AppleClasses/AppleButton.js" charset="utf-8"></script>
     <script type="text/javascript" src="file:///System/Library/WidgetResources/AppleClasses/AppleInfoButton.js" charset="utf-8"></script>
     <script type="text/javascript" src="localizedStrings.js" charset="utf-8"></script>
-    <script type="text/javascript" src="Parts/utilities.js" charset="utf-8"></script>
-    <script type="text/javascript" src="Parts/setup.js" charset="utf-8"></script>
-    <script type="text/javascript" src="Parts/Text.js" charset="utf-8"></script>
-    <script type="text/javascript" src="Parts/InfoButton.js" charset="utf-8"></script>
     <script type="text/javascript" src="main.js" charset="utf-8"></script>
-    <script type="text/javascript" src="Parts/PopupButton.js" charset="utf-8"></script>
-    <script type="text/javascript" src="Parts/Transitions.js" charset="utf-8"></script>
-    <script type="text/javascript" src="Parts/StackLayout.js" charset="utf-8"></script>
-    <script type="text/javascript" src="Parts/Button.js" charset="utf-8"></script>
-    <script type="text/javascript" src="Parts/Shape.js" charset="utf-8"></script>
-    <script type="text/javascript" src="Parts/List.js" charset="utf-8"></script>
     <script type="text/javascript" src="Parts/ButtonHandler.js" charset="utf-8"></script>
     <script type="text/javascript" src="file:///System/Library/WidgetResources/AppleClasses/AppleScrollbar.js" charset="utf-8"></script>
     <script type="text/javascript" src="file:///System/Library/WidgetResources/AppleClasses/AppleScrollArea.js" charset="utf-8"></script>
-    <script type="text/javascript" src="Parts/ScrollArea.js" charset="utf-8"></script>
 </head>
-<body onload="load();" apple-part="com.apple.Dashcode.part.StackLayout">
-    <div id="front">
-        <img id="frontImg" src="Images/front.png" alt="" apple-locked="true" apple-part="com.apple.Dashcode.part.frontimage" apple-style="image-theme: 2; image-shape: 3; image-opacity: 1.00; image-top-color: 0.310582131,0.384557873,0.212542921,1; image-bottom-color: 0.615400016,0.615400016,0.615400016,1; image-radius: 10,10,10,10; image-border: 1; image-border-color: 0,0,0,0.5; image-border-width: 1; shine-on: 0; shine-strength: 0.90; shine-alpha-level: 0.67; shine-height: 0.50; glass-arc-height: 0.06; embossed-on: 0; embossed-depth: 1; embossed-shadow: 0.68; embossed-highlight: 0.3; image-include-custom: 1; image-custom-image-path: Background 2.png; image-custom-center: 1; image-custom-resize: 2; shadow-include-shadow: 1; shadow-offset: -1.00,-6.00; shadow-color: 0,0,0,0.3333;">
+<body onload="load();" apple-part="com.apple.Dashcode.part.StackLayout" style="">
+    <div id="front" style="">
+        <img id="frontImg" src="Parts/Images/front.png" alt="" apple-locked="true" apple-part="com.apple.Dashcode.part.frontimage" apple-style="image-theme: 2; image-shape: 3; image-opacity: 1.00; image-top-color: 0.310582131,0.384557873,0.212542921,1; image-bottom-color: 0.615400016,0.615400016,0.615400016,1; image-radius: 10,10,10,10; image-border: 1; image-border-color: 0,0,0,0.5; image-border-width: 1; shine-on: 0; shine-strength: 0.90; shine-alpha-level: 0.67; shine-height: 0.50; glass-arc-height: 0.06; embossed-on: 0; embossed-depth: 1; embossed-shadow: 0.68; embossed-highlight: 0.3; image-include-custom: 1; image-custom-image-path: Background 2.png; image-custom-center: 1; image-custom-resize: 2; shadow-include-shadow: 1; shadow-offset: -1.00,-6.00; shadow-color: 0,0,0,0.3333;">
         <div class="apple-no-children" id="info" apple-part="com.apple.Dashcode.part.infobutton" apple-default-image-visibility="hidden"></div>
-        <div apple-part="com.apple.Dashcode.part.StackLayout" id="stack"><div id="main" apple-part-locked="true">
+        <div apple-part="com.apple.Dashcode.part.StackLayout" id="stack"><div id="main" apple-part-locked="true" style="">
                 <div apple-part="com.apple.Dashcode.part.roundedpopupbutton" class="apple-no-children" apple-style="image-theme: 0; image-shape: 3; image-button-type: 1; image-opacity: 1.00; image-top-color: 0,0,0,0.4; image-bottom-color: 0.615400016,0.615400016,0.615400016,1; image-radius: 5,5,5,5; image-border: 1; image-border-color: 0,0,0,0.5; image-border-width: 1; shine-on: 1; shine-strength: 0.20; shine-alpha-level: 0.20; shine-height: 0.50; glass-arc-height: 0.00; embossed-on: 0; embossed-depth: 1; embossed-shadow: 0.5; embossed-highlight: 0.5; shadow-include-shadow: 0;" id="presets"></div>
                 <div apple-part="com.apple.Dashcode.part.box" id="input">
                     <input type="text" name="inputX" value="1920" class="apple-textfield apple-no-children" apple-part="com.apple.Dashcode.part.textfield" id="inputX" onkeydown="keyboard(event)" onkeyup="updateSource(event)" onfocus="selectIt(event)">
@@ -48,32 +38,32 @@
                     <input type="text" name="ratioX" value="16" class="apple-textfield apple-no-children" apple-part="com.apple.Dashcode.part.textfield" id="ratioX" apple-default-image-visibility="hidden">
                     <div apple-part="com.apple.Dashcode.part.text" class="apple-text apple-no-children" apple-text-overflow="ellipsis" id="x2" apple-default-image-visibility="hidden"></div>
                     <input type="text" name="ratioY" value="9" class="apple-textfield apple-no-children" apple-part="com.apple.Dashcode.part.textfield" id="ratioY" apple-default-image-visibility="hidden">
-                    <div apple-part="com.apple.Dashcode.part.StackLayout" id="aspectLock"><div id="unlocked" apple-part-locked="true" onclick="toggleLock(event)"></div><div id="locked" apple-part-locked="true" onclick="toggleUnlock(event)"></div></div>
+                    <div apple-part="com.apple.Dashcode.part.StackLayout" id="aspectLock"><div id="unlocked" apple-part-locked="true" onclick="toggleLock(event)" style=""></div><div id="locked" apple-part-locked="true" onclick="toggleUnlock(event)" style=""></div></div>
                     <input type="text" name="aspect" value="1.778" class="apple-textfield apple-no-children" apple-part="com.apple.Dashcode.part.textfield" id="aspect">
                 </div>
                 <input apple-part="com.apple.Dashcode.part.slider" type="range" min="0" value="66.66" max="200" id="slider" onchange="updateSlider(event)">
-            </div><div id="list" apple-part-locked="true" apple-default-image-visibility="hidden">
+            </div><div id="list" apple-part-locked="true" apple-default-image-visibility="hidden" style="">
                 <div apple-part="com.apple.Dashcode.part.box" id="scrollBox" ondrop="dragDrop(event)" ondragover="dragOver(event)" ondragenter="dragEnter(event)" apple-group="input1" apple-text-overflow="">
                     <div apple-part="com.apple.Dashcode.part.scrollarea" id="scrollArea" apple-group="scrollArea">
                         <div id="content" class="content" apple-group="scrollArea" style="position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; overflow-x: hidden; overflow-y: hidden; ">
                             <ul apple-part="com.apple.Dashcode.part.widgetList" id="ratioList">
                                 <li id="listRowTemplate" apple-template="true" class="listRowTemplate_template">
-                                    <div id="label" apple-part="com.apple.Dashcode.part.text" class="apple-text apple-no-children label_template" apple-text-overflow="ellipsis"></div>
-                                    <div id="labelScale" apple-part="com.apple.Dashcode.part.text" class="apple-text apple-no-children labelScale_template" apple-text-overflow="ellipsis"></div>
+                                    <div id="label" apple-part="com.apple.Dashcode.part.text" class="apple-text apple-no-children label_template" apple-text-overflow="ellipsis" apple-style="part-width-dependent: true;"></div>
+                                    <div id="labelScale" apple-part="com.apple.Dashcode.part.text" class="apple-text apple-no-children labelScale_template" apple-text-overflow="ellipsis" apple-style="part-width-dependent: true;"></div>
                                 </li>
                             </ul>
                         </div></div>
                 </div>
                 <div apple-part="com.apple.Dashcode.part.roundedtextbutton" class="apple-no-children" apple-style="image-theme: 0; image-shape: 3; image-button-type: 0; image-opacity: 1.00; image-top-color: 0,0,0,0.5; image-bottom-color: 0.615400016,0.615400016,0.615400016,1; image-radius: 5,5,5,5; image-border: 1; image-border-color: 0,0,0,0.5; image-border-width: 1; shine-on: 1; shine-strength: 0.20; shine-alpha-level: 0.20; shine-height: 0.50; glass-arc-height: 0.00; embossed-on: 0; embossed-depth: 1; embossed-shadow: 0.5; embossed-highlight: 0.5; shadow-include-shadow: 0;" id="autodone"></div>
-            </div><div id="update" apple-part-locked="true">
+            </div><div id="update" apple-part-locked="true" style="">
                 <div apple-part="com.apple.Dashcode.part.text" class="apple-text apple-no-children" apple-default-image-visibility="hidden" apple-text-overflow="ellipsis" id="new"></div>
                 <div apple-part="com.apple.Dashcode.part.text" class="apple-text apple-no-children" apple-default-image-visibility="hidden" apple-text-overflow="ellipsis" id="newVersion"></div>
                 <div apple-part="com.apple.Dashcode.part.roundedtextbutton" class="apple-no-children" apple-style="image-theme: 0; image-shape: 3; image-button-type: 0; image-opacity: 1.00; image-top-color: 0,0,0,0.5; image-bottom-color: 0.615400016,0.615400016,0.615400016,1; image-radius: 5,5,5,5; image-border: 1; image-border-color: 0,0,0,0.5; image-border-width: 1; shine-on: 1; shine-strength: 0.20; shine-alpha-level: 0.20; shine-height: 0.50; glass-arc-height: 0.00; embossed-on: 0; embossed-depth: 1; embossed-shadow: 0.5; embossed-highlight: 0.5; shadow-include-shadow: 0;" id="skip"></div>
                 <div apple-part="com.apple.Dashcode.part.roundedtextbutton" class="apple-no-children" apple-style="image-theme: 0; image-shape: 3; image-button-type: 0; image-opacity: 1.00; image-top-color: 0,0,0,0.5; image-bottom-color: 0.615400016,0.615400016,0.615400016,1; image-radius: 5,5,5,5; image-border: 1; image-border-color: 0,0,0,0.5; image-border-width: 1; shine-on: 1; shine-strength: 0.20; shine-alpha-level: 0.20; shine-height: 0.50; glass-arc-height: 0.00; embossed-on: 0; embossed-depth: 1; embossed-shadow: 0.5; embossed-highlight: 0.5; shadow-include-shadow: 0;" id="download"></div>
             </div></div>
     </div>
-    <div id="back">
-        <img id="backImg" src="Images/back.png" alt="" apple-locked="true" apple-part="com.apple.Dashcode.part.backimage" apple-style=" image-radius: 10,10,10,10; image-border: 1; image-border-color: 0,0,0,0.5; image-border-width: 1; shadow-include-shadow: 1; shadow-offset: -1.00,-6.00; shadow-color: 0,0,0,0.3333;">
+    <div id="back" style="">
+        <img id="backImg" src="Parts/Images/back.png" alt="" apple-locked="true" apple-part="com.apple.Dashcode.part.backimage" apple-style=" image-radius: 10,10,10,10; image-border: 1; image-border-color: 0,0,0,0.5; image-border-width: 1; shadow-include-shadow: 1; shadow-offset: -1.00,-6.00; shadow-color: 0,0,0,0.3333;">
         <div apple-part="com.apple.Dashcode.part.roundedpopupbutton" class="apple-no-children" apple-style="image-theme: 0; image-shape: 3; image-button-type: 1; image-opacity: 1.00; image-top-color: 0,0,0,0.5; image-bottom-color: 0.615400016,0.615400016,0.615400016,1; image-radius: 5,5,5,5; image-border: 1; image-border-color: 0,0,0,0.5; image-border-width: 1; shine-on: 1; shine-strength: 0.20; shine-alpha-level: 0.20; shine-height: 0.50; glass-arc-height: 0.00; embossed-on: 0; embossed-depth: 1; embossed-shadow: 0.5; embossed-highlight: 0.5; shadow-include-shadow: 0;" id="limits"></div>
         <div apple-part="com.apple.Dashcode.part.text" class="apple-text apple-no-children" apple-default-image-visibility="hidden" apple-text-overflow="ellipsis" id="explanation"></div>
         <div apple-part="com.apple.Dashcode.part.roundedtextbutton" class="apple-no-children" apple-style="image-theme: 0; image-shape: 3; image-button-type: 0; image-opacity: 1.00; image-top-color: 0,0,0,0.4; image-bottom-color: 0.615400016,0.615400016,0.615400016,1; image-radius: 5,5,5,5; image-border: 1; image-border-color: 0,0,0,0.5; image-border-width: 1; shine-on: 1; shine-strength: 0.20; shine-alpha-level: 0.20; shine-height: 0.50; glass-arc-height: 0.00; embossed-on: 0; embossed-depth: 1; embossed-shadow: 0.5; embossed-highlight: 0.5; shadow-include-shadow: 0;" id="doneSave"></div>

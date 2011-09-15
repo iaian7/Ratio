@@ -14,3 +14,4 @@ var localizedStrings = {
     "newVersion": "version number\nversion description",
     "skip": "skip version"
 };
+
