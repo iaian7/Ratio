@@ -12,8 +12,8 @@
 		<integer>0</integer>
 		<key>sizes</key>
 		<array>
-			<string>{{0, 0}, {1129, 402}}</string>
-			<string>{{0, 412}, {1129, 623}}</string>
+			<string>{{0, 0}, {1675, 402}}</string>
+			<string>{{0, 412}, {1675, 569}}</string>
 		</array>
 	</dict>
 	<key>ContentViewType</key>
@@ -21,25 +21,25 @@
 	<key>Dashboard Widget Prefs</key>
 	<dict>
 		<key>id</key>
-		<string>d060e78ae959b041</string>
+		<string>151989bd6786b041</string>
 		<key>in-layer</key>
 		<true/>
 		<key>path</key>
-		<string>/private/var/folders/Un/UnxUHwCPHWKctaUXGCL53k+++TI/-Tmp-/Dashcode/.Ratio.dcprojGVBqU0/Ratio.dcproj/project.wdgt/</string>
+		<string>/private/var/folders/Un/UnxUHwCPHWKctaUXGCL53k+++TI/-Tmp-/Dashcode/.Ratio.dcprojNlMGJS/Ratio.dcproj/project.wdgt/</string>
 		<key>percent-offset-x</key>
 		<integer>0</integer>
 		<key>percent-offset-y</key>
 		<integer>0</integer>
 		<key>percent-type</key>
-		<integer>2</integer>
+		<integer>1</integer>
 		<key>percent-x</key>
-		<real>0.35989582538604736</real>
+		<real>0.38385418057441711</real>
 		<key>percent-y</key>
-		<real>0.15083333849906921</real>
+		<real>0.16249999403953552</real>
 		<key>pos-x</key>
-		<integer>929</integer>
+		<integer>737</integer>
 		<key>pos-y</key>
-		<integer>181</integer>
+		<integer>195</integer>
 		<key>rosetta</key>
 		<false/>
 	</dict>
@@ -64,12 +64,12 @@
 		<integer>0</integer>
 		<key>sizes</key>
 		<array>
-			<string>{{0, 0}, {244, 1056}}</string>
-			<string>{{245, 0}, {1130, 1056}}</string>
+			<string>{{0, 0}, {244, 1002}}</string>
+			<string>{{245, 0}, {1676, 1002}}</string>
 		</array>
 	</dict>
 	<key>MainWindowFrame</key>
-	<string>259 101 1374 1077 0 0 1920 1178 </string>
+	<string>0 96 1920 1082 0 0 1920 1178 </string>
 	<key>NavigatorSplitViewGeometry</key>
 	<dict>
 		<key>ContentSplitViewConfig</key>
@@ -81,7 +81,7 @@
 		<key>sizes</key>
 		<array>
 			<string>{{0, 0}, {246, 353}}</string>
-			<string>{{0, 363}, {246, 672}}</string>
+			<string>{{0, 363}, {246, 618}}</string>
 		</array>
 	</dict>
 	<key>Objects view expanded items</key>

@@ -64,7 +64,7 @@ body {
     background-color: rgba(0, 0, 0, 0);
     background-image: url(Images/formBackground%203.png);
     background-repeat: repeat-x;
-    border-color: rgba(0, 0, 0, 0.496094);
+    border-color: rgba(0, 0, 0, 0.5);
     background-position: 50% 50%;
 }
 
@@ -207,7 +207,7 @@ body {
     background-color: rgba(0, 0, 0, 0);
     background-image: url(Images/formBackground%201.png);
     background-repeat: repeat-x;
-    border-color: rgba(0, 0, 0, 0.496094);
+    border-color: rgba(0, 0, 0, 0.5);
     background-position: 50% 50%;
 }
 
@@ -239,7 +239,7 @@ body {
     margin-left: auto;
     margin-bottom: auto;
     top: -2px;
-    border-color: rgba(0, 0, 0, 0.308594);
+    border-color: rgba(0, 0, 0, 0.5);
 }
 
 #aspect {
@@ -313,7 +313,7 @@ body {
     background-repeat: repeat-x;
     background-image: url(Images/formBackground%202.png);
     border-style: solid;
-    border-color: rgba(0, 0, 0, 0.496094);
+    border-color: rgba(0, 0, 0, 0.5);
     background-position: 50% 50%;
 }
 
@@ -327,7 +327,7 @@ body {
     margin-right: 0px;
     margin-bottom: 0px;
     width: auto;
-    border-color: rgba(0, 0, 0, 0.300781);
+    border-color: rgba(0, 0, 0, 0.5);
 }
 
 #explanation {
@@ -607,21 +607,20 @@ body {
     padding: 0px;
     -khtml-margin-top-collapse: separate;
     -khtml-margin-bottom-collapse: separate;
-    -webkit-border-top-left-radius: 4px 4px;
-    -webkit-border-top-right-radius: 4px 4px;
-    -webkit-border-bottom-left-radius: 4px 4px;
-    -webkit-border-bottom-right-radius: 4px 4px;
     border-width: 1px;
     opacity: 1;
-    border-style: solid;
-    margin-top: 0px;
-    margin-bottom: 4px;
+    border-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.25);
+    height: 24px;
+    margin-left: 2px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    margin-right: 2px;
     width: auto;
-    margin-left: 0px;
-    margin-right: 0px;
-    height: 22px;
-    border-color: rgba(0, 0, 0, 0.179688);
-    background-color: rgba(0, 0, 0, 0.078125);
+    -webkit-border-top-left-radius: 5px 5px;
+    -webkit-border-top-right-radius: 5px 5px;
+    -webkit-border-bottom-left-radius: 5px 5px;
+    -webkit-border-bottom-right-radius: 5px 5px;
 }
 
 .label_template {
@@ -631,17 +630,17 @@ body {
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
-    height: auto;
-    top: 2px;
-    bottom: 2px;
     color: rgb(255, 255, 255);
     font-size: 14px;
     text-shadow: rgb(0, 0, 0) 0px -1px 1px;
     text-align: center;
-    line-height: 16px;
     left: 62px;
     margin-right: auto;
     width: 120px;
+    line-height: 16px;
+    height: auto;
+    top: 3px;
+    bottom: 3px;
 }
 
 #ratioList {
@@ -653,8 +652,8 @@ body {
     bottom: auto;
     width: auto;
     left: 0px;
-    top: 4px;
-    right: 0px;
+    right: 20px;
+    top: 0px;
 }
 
 #scrollBox {
@@ -677,7 +676,7 @@ body {
     height: 128px;
     background-image: url(Images/Form-Background-xLarge.png);
     overflow: hidden;
-    border-color: rgba(0, 0, 0, 0.496094);
+    border-color: rgba(0, 0, 0, 0.5);
     background-position: 50% 50%;
 }
 
@@ -686,13 +685,12 @@ body {
     font-family: HelveticaNeue;
     font-size: 10pt;
     position: absolute;
-    right: auto;
-    bottom: auto;
-    margin-top: 0px;
-    left: 4px;
-    width: 246px;
-    height: 128px;
-    top: 0px;
+    right: 2px;
+    width: auto;
+    bottom: 2px;
+    height: auto;
+    top: 2px;
+    left: 2px;
 }
 
 .labelScale_template {
@@ -703,9 +701,7 @@ body {
     color: rgb(255, 255, 255);
     text-shadow: rgb(0, 0, 0) 0px -1px 1px;
     text-align: center;
-    top: 2px;
     left: 12px;
-    bottom: 2px;
     height: auto;
     margin-right: auto;
     width: 50px;
@@ -713,4 +709,6 @@ body {
     font-size: 12px;
     line-height: 18px;
     opacity: 0.7;
+    top: 3px;
+    bottom: 3px;
 }
