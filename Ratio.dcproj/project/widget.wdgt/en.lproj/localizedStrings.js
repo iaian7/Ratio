@@ -12,6 +12,8 @@ var localizedStrings = {
     "iaian7com": "For more information, please visit iaian7.com/dashboard/ratio",
     "new": "new version available",
     "newVersion": "version number\nversion description",
-    "skip": "skip version"
+    "skip": "skip version",
+    "x": "×"
 };
+
 

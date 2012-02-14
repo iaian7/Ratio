@@ -12,7 +12,9 @@ var dashcodePartSpecs = {
     "download": { "creationFunction": "CreateButton", "leftImageWidth": 5, "onclick": "versionDownload", "rightImageWidth": 5, "text": "download", "view": "DC.View" },
     "explanation": { "text": "explanation", "view": "DC.Text" },
     "iaian7com": { "text": "iaian7com", "view": "DC.Text" },
+    "image": { "view": "DC.ImageLayout" },
     "info": { "backgroundStyle": "black", "creationFunction": "CreateInfoButton", "foregroundStyle": "white", "frontID": "front", "onclick": "showBack", "view": "DC.View" },
+    "InputBackground": { "creationFunction": "CreateShape", "leftImageWidth": 5, "rightImageWidth": 5 },
     "label": { "text": "Item", "view": "DC.Text" },
     "labelScale": { "text": "Item", "view": "DC.Text" },
     "limits": { "creationFunction": "CreatePopupButton", "leftImageWidth": 5, "onchange": "updateLimit", "options": [["no limit", "none"], ["integer", "1"], ["base 2", "2"], ["base 4", "4"], ["base 5", "5"], ["base 6", "6"], ["base 8", "8"], ["base 10", "10", true], ["base 12", "12"], ["base 16", "16"]], "rightImageWidth": 16, "view": "DC.View" },
@@ -22,11 +24,12 @@ var dashcodePartSpecs = {
     "ratioList": { "allowsEmptySelection": true, "dataArray": ["Item 1", "Item 2", "Item 3"], "dataSourceName": "listData", "labelElementId": "label", "listStyle": "List.EDGE_TO_EDGE", "sampleRows": 3, "selectionEnabled": true, "useDataSource": true, "view": "DC.List" },
     "scrollArea": { "autoHideScrollbars": true, "creationFunction": "CreateScrollArea", "hasVerticalScrollbar": true, "scrollbarDivSize": 18, "scrollbarMargin": 6, "spacing": -18, "view": "DC.View" },
     "skip": { "creationFunction": "CreateButton", "leftImageWidth": 5, "onclick": "showMain", "rightImageWidth": 5, "text": "skip", "view": "DC.View" },
+    "sliderBackground": { "creationFunction": "CreateShape", "leftImageWidth": 5, "rightImageWidth": 5 },
     "stack": { "subviewsTransitions": [{ "direction": "right-left", "duration": "", "timing": "ease-in-out", "type": "push" }, { "direction": "right-left", "duration": "", "timing": "ease-in-out", "type": "push" }, { "direction": "right-left", "duration": "", "timing": "ease-in-out", "type": "push" }], "view": "DC.StackLayout" },
     "swap": { "creationFunction": "CreateShape", "view": "DC.View" },
     "text": { "text": "©2009 John Einselen / Vectorform LLC", "view": "DC.Text" },
     "x1": { "text": "x", "view": "DC.Text" },
-    "x2": { "text": "x", "view": "DC.Text" },
     "x3": { "text": "x", "view": "DC.Text" }
 };
+
 
