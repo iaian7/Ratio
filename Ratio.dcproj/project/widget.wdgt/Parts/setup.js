@@ -10,6 +10,7 @@ var dashcodePartSpecs = {
     "autoGenerate": { "creationFunction": "CreateButton", "leftImageWidth": 5, "onclick": "auto", "rightImageWidth": 5, "text": "auto", "view": "DC.View" },
     "doneSave": { "creationFunction": "CreateButton", "leftImageWidth": 5, "onclick": "showFront", "rightImageWidth": 5, "text": "done", "view": "DC.View" },
     "download": { "creationFunction": "CreateButton", "leftImageWidth": 5, "onclick": "versionDownload", "rightImageWidth": 5, "text": "download", "view": "DC.View" },
+    "example": { "text": "example", "view": "DC.Text" },
     "explanation": { "text": "explanation", "view": "DC.Text" },
     "iaian7com": { "text": "iaian7com", "view": "DC.Text" },
     "image": { "view": "DC.ImageLayout" },
@@ -27,9 +28,10 @@ var dashcodePartSpecs = {
     "sliderBackground": { "creationFunction": "CreateShape", "leftImageWidth": 5, "rightImageWidth": 5 },
     "stack": { "subviewsTransitions": [{ "direction": "right-left", "duration": "", "timing": "ease-in-out", "type": "push" }, { "direction": "right-left", "duration": "", "timing": "ease-in-out", "type": "push" }, { "direction": "right-left", "duration": "", "timing": "ease-in-out", "type": "push" }], "view": "DC.StackLayout" },
     "swap": { "creationFunction": "CreateShape", "view": "DC.View" },
-    "text": { "text": "©2009 John Einselen / Vectorform LLC", "view": "DC.Text" },
+    "text": { "text": "©2012 John Einselen, Vectorform LLC", "view": "DC.Text" },
     "x1": { "text": "x", "view": "DC.Text" },
     "x3": { "text": "x", "view": "DC.Text" }
 };
+
 
 

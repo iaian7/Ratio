@@ -8,12 +8,15 @@ var localizedStrings = {
     "auto": "auto",
     "done": "done",
     "download": "download",
-    "explanation": "Simultaneous match limits affect only auto generate and the scale slider (some video codecs require base 2 resolutions).\n\nUse the arrow keys to quickly adjust values interactively. Hold the shift key to adjust in multiples of ten.",
-    "iaian7com": "For more information, please visit iaian7.com/dashboard/ratio",
-    "new": "new version available",
+    "example": "(example: WMV codecs require base 2)",
+    "explanation": "Click the Ratio icon to find alternate resolutions defined by the base limit above.\n\nUse arrow keys to quickly adjust values, and hold the shift key for multiples of ten.",
+    "explanation1": "Click the Ratio icon to find alternate resolutions defined by the base limit.\n(example: WMV codec requires base 2)\nUse arrow keys to quickly adjust values, and hold the shift key for multiples of ten.",
+    "iaian7com": "For more, visit iaian7.com",
+    "new": "new update available!",
     "newVersion": "version number\nversion description",
     "skip": "skip version",
     "x": "×"
 };
+
 
 
