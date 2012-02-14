@@ -18,10 +18,10 @@ var dashcodePartSpecs = {
     "InputBackground": { "creationFunction": "CreateShape", "leftImageWidth": 5, "rightImageWidth": 5 },
     "label": { "text": "Item", "view": "DC.Text" },
     "labelScale": { "text": "Item", "view": "DC.Text" },
-    "limits": { "creationFunction": "CreatePopupButton", "leftImageWidth": 5, "onchange": "updateLimit", "options": [["no limit", "none"], ["integer", "1"], ["base 2", "2"], ["base 4", "4"], ["base 5", "5"], ["base 6", "6"], ["base 8", "8"], ["base 10", "10", true], ["base 12", "12"], ["base 16", "16"]], "rightImageWidth": 16, "view": "DC.View" },
+    "limits": { "creationFunction": "CreatePopupButton", "leftImageWidth": 5, "onchange": "updateLimit", "options": [["no limit", "none"], ["integer", "1"], ["base 2", "2", true], ["base 4", "4"], ["base 5", "5"], ["base 6", "6"], ["base 8", "8"], ["base 10", "10"], ["base 12", "12"], ["base 16", "16"]], "rightImageWidth": 16, "view": "DC.View" },
     "new": { "text": "new", "view": "DC.Text" },
     "newVersion": { "text": "newVersion", "view": "DC.Text" },
-    "presets": { "creationFunction": "CreatePopupButton", "leftImageWidth": 5, "onchange": "updatePreset", "options": ["presets", ["HD 1080p", "1920x1080"], ["HD 720p", "1280x720"], ["HD 480p", "852x480"], ["SD NTSC", "720x480"], ["SD PAL", "720x576"], ["Apple iFrame", "960x540"], ["Apple iPhone/iTouch", "320x480"], ["Apple iPhone 4", "640x960"], ["Apple iPad", "1024x768"], ["Microsoft Zune HD", "272x480"], ["Microsoft Windows Mobile", "480x800"], ["Microsoft Surface", "1024x768"], ["Desktop Fullscreen", "1600x1200"], ["Desktop Widescreen", "1920x1200"], ["Film 1.85", "2220x1200"], ["Film 2.35", "2820x1200"]], "rightImageWidth": 16, "view": "DC.View" },
+    "presets": { "creationFunction": "CreatePopupButton", "leftImageWidth": 5, "name": "presets", "onchange": "updatePreset", "options": ["presets", ["HD 1080p", "1920x1080"], ["HD 720p", "1280x720"], ["HD 480p", "852x480"], ["SD NTSC", "720x480"], ["SD PAL", "720x576"], ["Apple iFrame", "960x540"], ["Apple iOS", "320x480"], ["Apple iOS Retina", "640x960"], ["Apple iPad", "1024x768"], ["Microsoft WP7", "480x800"], ["Microsoft Surface", "1024x768"], ["Microsoft Surface 2", "1920x1080"], ["Desktop Fullscreen", "1600x1200"], ["Desktop Widescreen", "1920x1200"], ["Film 1.85", "2220x1200"], ["Film 2.35", "2820x1200"]], "rightImageWidth": 16, "view": "DC.View" },
     "ratioList": { "allowsEmptySelection": true, "dataArray": ["Item 1", "Item 2", "Item 3"], "dataSourceName": "listData", "labelElementId": "label", "listStyle": "List.EDGE_TO_EDGE", "sampleRows": 3, "selectionEnabled": true, "useDataSource": true, "view": "DC.List" },
     "scrollArea": { "autoHideScrollbars": true, "creationFunction": "CreateScrollArea", "hasVerticalScrollbar": true, "scrollbarDivSize": 18, "scrollbarMargin": 6, "spacing": -18, "view": "DC.View" },
     "skip": { "creationFunction": "CreateButton", "leftImageWidth": 5, "onclick": "showMain", "rightImageWidth": 5, "text": "skip", "view": "DC.View" },
@@ -30,6 +30,7 @@ var dashcodePartSpecs = {
     "swap": { "creationFunction": "CreateShape", "view": "DC.View" },
     "text": { "text": "©2012 John Einselen, Vectorform LLC", "view": "DC.Text" },
     "x1": { "text": "x", "view": "DC.Text" },
+    "x2": { "text": "%", "view": "DC.Text" },
     "x3": { "text": "x", "view": "DC.Text" }
 };
 

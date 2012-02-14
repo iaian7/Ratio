@@ -2,6 +2,8 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>CYLastWindowPosition</key>
+	<string>{1391, 560}</string>
 	<key>ContentSplitViewGeometry</key>
 	<dict>
 		<key>ContentSplitViewConfig</key>
@@ -17,7 +19,7 @@
 		</array>
 	</dict>
 	<key>ContentViewType</key>
-	<integer>0</integer>
+	<integer>5</integer>
 	<key>Dashboard Widget Prefs</key>
 	<dict>
 		<key>id</key>
@@ -50,7 +52,7 @@
 		<key>Save</key>
 		<true/>
 		<key>SavePath</key>
-		<string>/Users/admin/Dropbox/Documents/Widgets/VF Ratio</string>
+		<string>/Volumes/Projects HD/0-Git/Ratio</string>
 		<key>enableSimulation</key>
 		<true/>
 		<key>simulatedHost</key>
@@ -423,12 +425,16 @@
 			</array>
 		</array>
 		<key>Objects view last selections</key>
-		<array/>
+		<array>
+			<array>
+				<integer>5</integer>
+			</array>
+		</array>
 		<key>Visible StackLayout Views</key>
 		<array>
+			<string>unlocked</string>
 			<string>front</string>
 			<string>main</string>
-			<string>unlocked</string>
 		</array>
 	</dict>
 </dict>

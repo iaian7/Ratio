@@ -119,7 +119,7 @@ if (window.widget) {
 var wid = widget.identifier;
 var prefPreset = loadPref(wid+"preset",1);
 var prefLimit = loadPref(wid+"limit",10);
-var prefLimitID = loadPref(wid+"limitID",7);
+var prefLimitID = loadPref(wid+"limitID",2);
 var prefScale = loadPref(wid+"scale",66.67);
 var prefRatio = loadPref(wid+"ratio","16x9");
 var prefAspect = loadPref(wid+"aspect",1.778);
@@ -352,9 +352,11 @@ function update(vx, vy, vs, vp, vr, active) {	// vx = width, vy = height, vs = s
 
 	if (vp) {
 		if ((prefScale % 1) == 0) {
-			scale.value = prefScale.toFixed(0)+"%";
+//			scale.value = prefScale.toFixed(0)+"%";
+			scale.value = prefScale.toFixed(0);
 		} else {
-			scale.value = prefScale.toFixed(2)+"%";
+//			scale.value = prefScale.toFixed(2)+"%";
+			scale.value = prefScale.toFixed(2);
 		}
 	}
 
@@ -557,7 +559,7 @@ function versionCheck(event) {
 //	alert("bundleVersion: "+bundleVersion);
 //	alert("websiteVersion: "+websiteVersion);
 
-	if (websiteVersion != bundleVersion) {
+	if (websiteVersion > bundleVersion) {
 		document.getElementById("newVersion").innerHTML = "version "+versions[0]+"<br/>"+versions[1];
 		showUpdate();
 	} else {

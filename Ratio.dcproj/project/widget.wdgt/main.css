@@ -26,10 +26,10 @@ body {
     position: absolute;
     width: 13px;
     height: 13px;
-    top: 25px;
-    margin-bottom: auto;
-    left: 25px;
+    top: 5px;
+    left: 5px;
     margin-right: auto;
+    margin-bottom: auto;
 }
 
 #back {
@@ -84,7 +84,7 @@ body {
     margin-left: auto;
     top: 0px;
     margin-bottom: auto;
-    width: 70px;
+    width: 65px;
 }
 
 #inputX {
@@ -101,11 +101,11 @@ body {
     border-style: solid;
     border-color: rgb(0, 0, 0);
     border-width: 0px;
-    width: 70px;
     left: 5px;
     margin-right: auto;
     top: 0px;
     margin-bottom: auto;
+    width: 65px;
 }
 
 #ratios {
@@ -189,11 +189,11 @@ body {
     background-color: rgba(13, 13, 13, 0);
     border-style: solid;
     border-width: 0px;
-    width: 70px;
     left: 5px;
     margin-right: auto;
     top: 0px;
     margin-bottom: auto;
+    width: 65px;
 }
 
 #outputY {
@@ -210,7 +210,7 @@ body {
     margin-left: auto;
     top: 0px;
     margin-bottom: auto;
-    width: 70px;
+    width: 65px;
 }
 
 #aspect {
@@ -227,8 +227,8 @@ body {
     margin-left: auto;
     top: 0px;
     margin-bottom: auto;
-    width: 70px;
     font-size: 11pt;
+    width: 65px;
 }
 
 #ratio {
@@ -242,11 +242,11 @@ body {
     border-style: solid;
     border-color: rgb(0, 0, 0);
     border-width: 0px;
-    width: 70px;
     left: 35px;
     margin-right: auto;
     top: 0px;
     margin-bottom: auto;
+    width: 65px;
 }
 
 #slider {
@@ -272,13 +272,13 @@ body {
     border-color: rgb(0, 0, 0);
     background-color: rgba(13, 13, 13, 0);
     border-width: 0px;
-    text-align: center;
     font-size: 11pt;
-    right: 5px;
+    text-align: right;
+    width: 55px;
+    right: 20px;
     margin-left: auto;
     top: 115px;
     margin-bottom: auto;
-    width: 70px;
 }
 
 #main {
@@ -697,7 +697,7 @@ body {
     position: absolute;
     margin-top: 0px;
     top: 36px;
-    left: 12px;
+    left: 5px;
     margin-right: auto;
     margin-bottom: auto;
 }
@@ -731,4 +731,24 @@ body {
     width: auto;
     left: 30px;
     opacity: 0.5;
+}
+
+#x2 {
+    font-family: HelveticaNeue;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    position: absolute;
+    margin-top: 0px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    text-shadow: none;
+    border-color: rgb(0, 0, 0);
+    width: 20px;
+    height: 20px;
+    top: 118px;
+    right: 3px;
+    margin-left: auto;
+    margin-bottom: auto;
+    opacity: 0.5;
+    font-size: 14px;
 }
