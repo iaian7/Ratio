@@ -300,7 +300,6 @@ body {
     overflow: hidden;
     position: absolute;
     color: rgb(255, 255, 255);
-    font-size: 10pt;
     text-align: left;
     top: 50px;
     left: 20px;
@@ -308,6 +307,8 @@ body {
     width: auto;
     height: auto;
     bottom: 50px;
+    text-shadow: rgb(0, 0, 0) 0px -1px 0px;
+    font-size: 12px;
 }
 
 #list {
@@ -349,7 +350,6 @@ body {
     position: absolute;
     margin-top: 0px;
     color: rgb(255, 255, 255);
-    text-shadow: rgb(0, 0, 0) 0px -1px 1px;
     text-align: center;
     top: 0px;
     font-family: 'Helvetica Neue';
@@ -359,6 +359,7 @@ body {
     margin-bottom: auto;
     right: 0px;
     width: auto;
+    text-shadow: rgb(0, 0, 0) 0px -1px 0px;
 }
 
 #limits {
@@ -366,7 +367,6 @@ body {
     font-size: 14px;
     color: rgb(255, 255, 255);
     opacity: 1;
-    text-shadow: rgb(0, 0, 0) 0px -1px 1px;
     text-align: center;
     font-family: 'Helvetica Neue';
     height: 25px;
@@ -374,6 +374,7 @@ body {
     width: auto;
     right: 20px;
     top: 20px;
+    text-shadow: rgb(0, 0, 0) 0px -1px 0px;
 }
 
 #autoGenerate {
@@ -413,7 +414,6 @@ body {
     text-overflow: ellipsis;
     overflow: hidden;
     position: absolute;
-    font-size: 8pt;
     height: 10px;
     left: 20px;
     bottom: 20px;
@@ -421,6 +421,7 @@ body {
     width: auto;
     right: 90px;
     opacity: 0.5;
+    font-size: 11px;
 }
 
 #update {
@@ -436,7 +437,6 @@ body {
     position: absolute;
     color: rgb(255, 255, 255);
     font-size: 12pt;
-    text-shadow: rgb(0, 0, 0) 0px -1px 1px;
     text-align: center;
     font-family: 'Helvetica Neue';
     left: 20px;
@@ -445,6 +445,7 @@ body {
     right: 20px;
     top: 30px;
     height: 30px;
+    text-shadow: rgb(0, 0, 0) 0px -1px 0px;
 }
 
 #newVersion {
@@ -452,7 +453,6 @@ body {
     overflow: hidden;
     position: absolute;
     color: rgb(255, 255, 255);
-    text-shadow: rgb(0, 0, 0) 0px -1px 1px;
     min-height: 0px;
     font-size: 10pt;
     text-align: center;
@@ -464,6 +464,7 @@ body {
     width: auto;
     top: 60px;
     opacity: 0.5;
+    text-shadow: rgb(0, 0, 0) 0px -1px 0px;
 }
 
 #skip {
@@ -471,7 +472,6 @@ body {
     position: absolute;
     font-size: 14px;
     color: rgb(255, 255, 255);
-    text-shadow: rgb(0, 0, 0) 0px -1px 1px;
     margin-top: auto;
     width: auto;
     height: 25px;
@@ -479,6 +479,7 @@ body {
     right: 135px;
     left: 0px;
     font-family: 'Helvetica Neue';
+    text-shadow: rgb(0, 0, 0) 0px -1px 0px;
 }
 
 #download {
@@ -486,7 +487,6 @@ body {
     position: absolute;
     font-size: 14px;
     color: rgb(255, 255, 255);
-    text-shadow: rgb(0, 0, 0) 0px -1px 1px;
     width: auto;
     margin-top: auto;
     bottom: 0px;
@@ -494,6 +494,7 @@ body {
     height: 25px;
     right: 0px;
     font-family: 'Helvetica Neue';
+    text-shadow: rgb(0, 0, 0) 0px -1px 0px;
 }
 
 #iaian7com {
@@ -504,12 +505,13 @@ body {
     color: rgb(255, 255, 255);
     text-align: left;
     width: 200px;
-    font-size: 9pt;
     left: 20px;
     margin-right: auto;
     margin-top: auto;
     height: 15px;
     bottom: 30px;
+    opacity: 0.5;
+    font-size: 11px;
 }
 
 #unlocked {
@@ -573,17 +575,17 @@ body {
     border-width: 1px;
     opacity: 1;
     border-color: rgb(0, 0, 0);
-    margin-left: 2px;
-    margin-top: 2px;
-    margin-bottom: 2px;
-    margin-right: 2px;
-    width: auto;
     border-top-left-radius: 5px 5px;
     border-top-right-radius: 5px 5px;
     border-bottom-left-radius: 5px 5px;
     border-bottom-right-radius: 5px 5px;
     height: 24px;
     background-color: rgb(26, 26, 26);
+    margin-top: 4px;
+    margin-left: 4px;
+    margin-bottom: 4px;
+    width: auto;
+    margin-right: 4px;
 }
 
 .label_template {
@@ -595,13 +597,14 @@ body {
     font-size: 14px;
     text-align: center;
     line-height: 16px;
-    height: auto;
-    right: 40px;
     left: 60px;
-    top: 3px;
-    bottom: 3px;
     font-family: 'Helvetica Neue';
     text-shadow: none;
+    top: 4px;
+    right: 40px;
+    width: auto;
+    bottom: 2px;
+    height: auto;
 }
 
 #ratioList {
@@ -721,16 +724,17 @@ body {
     overflow: hidden;
     position: absolute;
     color: rgb(255, 255, 255);
-    font-size: 10pt;
     text-align: left;
     min-height: 15px;
-    top: 80px;
-    bottom: 84px;
-    height: auto;
-    right: 20px;
-    width: auto;
     left: 30px;
     opacity: 0.5;
+    text-shadow: rgb(0, 0, 0) 0px -1px 0px;
+    font-size: 12px;
+    top: 78px;
+    right: 20px;
+    width: auto;
+    bottom: 86px;
+    height: auto;
 }
 
 #x2 {
