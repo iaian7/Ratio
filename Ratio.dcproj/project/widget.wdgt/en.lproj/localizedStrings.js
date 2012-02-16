@@ -11,13 +11,14 @@ var localizedStrings = {
     "download": "download",
     "example": "(example: WMV codecs require base 2)",
     "explanation": "The Ratio icon or slider will find alternate resolutions defined by the base limit above.\n\nUse arrow keys to quickly adjust values, hold shift for multiples of ten.",
-    "iaian7com": "For more information, visit iaian7.com",
+    "iaian7com": "For more information, please visit\niaian7.com/dashboard/ratio",
     "new": "new update available!",
     "newVersion": "version number\nversion description",
     "skip": "skip version",
     "x": "×",
     "x1": "×"
 };
+
 
 
 

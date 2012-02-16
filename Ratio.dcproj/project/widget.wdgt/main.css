@@ -508,10 +508,11 @@ body {
     left: 20px;
     margin-right: auto;
     margin-top: auto;
-    height: 15px;
-    bottom: 30px;
     opacity: 0.5;
     font-size: 11px;
+    line-height: 10px;
+    height: 25px;
+    bottom: 28px;
 }
 
 #unlocked {
@@ -728,13 +729,13 @@ body {
     min-height: 15px;
     left: 30px;
     opacity: 0.5;
-    text-shadow: rgb(0, 0, 0) 0px -1px 0px;
     font-size: 12px;
     top: 78px;
     right: 20px;
     width: auto;
     bottom: 86px;
     height: auto;
+    text-shadow: none;
 }
 
 #x2 {
